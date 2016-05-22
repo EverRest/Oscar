@@ -29,6 +29,13 @@ $(document).ready(function () {
 		'auto': 3
 	});
 
+	//init fancybox
+
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+
 	//init Tabs
 	$(function() {
 		$( "#tabs" ).tabs({
