@@ -95,12 +95,17 @@ body {
 
 hr.small {
     max-width: 100px;
+    margin: 0 auto;
 }
 
 .logo {
     color: rgba(52, 152, 219,1.0);
     text-transform: uppercase;
 
+}
+
+.logo {
+    font-family: "RobotoMedium";
 }
 
 /* Side Menu */
@@ -268,11 +273,39 @@ a.menu {
     -o-background-size: cover;
 }
 
+.oscar-logo {
+    margin: 20% 0 0 0;
+    font-family: RobotoBold;
+    font-size: 4em;
+}
+
 /* Portfolio */
 
 .portfolio {
     padding: 20px 0 0 0;
     min-height: 600px;
+    /*color: #fff;
+    background-color: rgba(52, 152, 219,1.0);*/
+    color: #000;
+}
+
+li.ui-state-hover {
+    color: #fff !important;
+}
+
+.black {
+    color: #000;
+}
+
+.blue {
+    color: rgb(52,152,219);
+    font-family: "RobotoLight";
+}
+
+.portfolio h2 {
+    font-family: "RobotoLight";
+    margin: 0;
+    padding: 0;
 }
 
 .portfolio-item {
@@ -291,6 +324,8 @@ a.menu {
 
 .call-to-action {
     padding: 50px 0;
+    background-color: #fff;
+    overflow: hidden;
 }
 
 .call-to-action .btn {
@@ -332,6 +367,10 @@ footer {
     padding: 100px 0;
 }
 
+footer h4 {
+    margin: 10px 0; 
+}
+
 /* .hidden */
 
 .hidden {
@@ -349,7 +388,6 @@ footer {
 .callback .submit:hover {
     background-color: rgba(52, 152, 219,.4);
     color: #fff;
-    text-decoration: underline;
 }
 
 .callback h3 {

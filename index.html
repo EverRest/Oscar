@@ -16,27 +16,26 @@
     <title>OSCAR development best service!</title>
     
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAuLi4AAAAAAP///wC64NQAWlroAElRcAD39/cAWWSRAEtLxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAElN3czUzNSESU3dzNTM1IRJVB3VVVVUhElN3czMzNSESU3dzVVU1IRJTMzNWZTUhElMzM1VVNSESUzMzMzM1ISiIiIiIiIiCEoRERERESCERKERERESCEREnhERESCERESd4RESCERERJ3KIiCERERElUiIiERERESIiERERERGAAQAAgAEAAIABAACAAQAAgAEAAIABAACAAQAAgAEAAAAAAACAAQAAwAMAAMAHAADADwAAwB8AAMA/AADD/wAA" rel="icon" type="image/x-icon" />
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Fancybox CSS -->
-    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-
-    <!--  BXslider CSS  -->
-
-    <link rel="stylesheet" type="text/css" href="libs/jquery.bxslider/jquery.bxslider.css">
-
     <!-- jQuery UI CSS -->
     <link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui-1.11.4/jquery-ui.min.css">
+    
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/media.css">
 
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/slider/Carousel-Plugin/Minimal/example/css/slider.css">
+    
+    <!-- Tabs CSS -->
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-
-
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"> 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +66,7 @@
                 <a href="#services">Наші послуги</a>
             </li>
             <li class="menu">
-                <a href="#portfolio">Портфоліо об'єктів</a>
+                <a href="#slider">Портфоліо об'єктів</a>
             </li>
             <li class="menu">
                 <a href="#map">Знайти нас</a>
@@ -94,8 +93,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>Наша робота</h2>
+                    <h2 class="blue">Наша робота</h2>
                     <hr class="small">
+                    <br>
+                    <br>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="portfolio-item">
@@ -121,7 +122,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <!-- <a href="#"> -->
-                                    <img title="Широкий вибір допоможе вибрати нерухомість з найкращим плануванням по демократичних цінах." class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                    <img title="Широкий вибір допоможе вибрати нерухомість з на йкращим плануванням і площею по демократичних цінах." class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
                                 <!-- </a> -->
                             </div>
                         </div>
@@ -143,7 +144,9 @@
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2 class="services-header">Наші переваги</h2>
+                    <br>
                     <hr class="small">
+                    <br>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
@@ -154,7 +157,7 @@
                                 <h4>
                                     <strong>Супровід і оформлення документів</strong>
                                 </h4>
-                                <button id="docs" class="btn-services btn btn-dark">Більше>></button>
+                                <!--<button id="docs" class="btn-services btn btn-dark">Більше>></button> -->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -166,7 +169,7 @@
                                 <h4>
                                     <strong>Індивідуальний підхід до клієнта</strong>
                                 </h4>
-                                <button id="client" class="btn-services btn btn-dark">Більше>></button>
+                                <!-- <button id="client" class="btn-services btn btn-dark">Більше>></button> -->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -178,7 +181,7 @@
                                 <h4>
                                     <strong>Завжди широкий вибір на будь-який смак</strong>
                                 </h4>
-                                <button id="choice" class="btn-services btn btn-dark">Більше>></button>
+                                <!--<button id="choice" class="btn-services btn btn-dark">Більше>></button>-->
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -190,7 +193,7 @@
                                 <h4>
                                     <strong>Лише перевірені об'єкти нерухомості</strong>
                                 </h4>
-                                <button id="secure"  class="btn-services btn btn-dark">Більше>></button>
+                                <!--<button id="secure"  class="btn-services btn btn-dark">Більше>></button>-->
                             </div>
                         </div>
                     </div>
@@ -224,43 +227,90 @@
 
     <!-- Callout -->
     <aside id="basic" class="callout">
-        <div class="text-vertical-center">
-            <h1><span class="logo">Oscar</span>development</h1>
+        <div class="text-center">
+            <h1 class="text-center oscar-logo"><span class="logo">Oscar</span>development</h1>
         </div>
     </aside>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio tracked">
-        <div class="container">
-            <div class="row">
-                <ul class="bxslider">
-                  <li><img src="img/pic-1.jpg" class="img-responsive" title="квартири на продаж" /></li>
-                  <li><img src="img/pic-2.jpg" class="img-responsive" title="ще квартири на продаж" /></li>
-                  <li><img src="img/pic-3.jpg" class="img-responsive" title="хто доклацав молодець.Іще квартири" /></li>
-                  <li><img src="img/pic-4.jpg" class="img-responsive" title="дорогі апартаменти" /></li>
-                </ul>
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+    <hr class="text-vertical-center">
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+    <!-- Portfolio -->
+    <section class="slider portfolio tracked" id="slider">
+        <h2 class="text-center blue">Портфоліо</h2>
+        <br>
+        <hr class="small black">
+        <br>
+        <div class="slItems">
+            <div class="slItem" style="background-image: url('img/pic-1.jpg');">
+                <div class="slText">
+                Slide 1
+                </div>
+            </div>
+            <div class="slItem" style="background-image: url('img/pic-2.jpg');">
+                <div class="slText">
+                Slide 2
+                </div>
+            </div>
+            <div class="slItem" style="background-image: url('img/pic-3.jpg');">
+                <div class="slText">
+                Slide 3
                 </div>
             </div>
         </div>
+    </section>
+
+    <aside class="call-to-action bg-primary">
+        <!--<div class="container"> -->
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <!--<br>
+                    <h3>Для отримання детальнішої інформації натисніть клавішу</h3>
+                    <br>
+                    <br>
+                    <a href="#" class="btn btn-lg btn-light">Натисни!</a>-->
+                    <br>
+                    <br>
+                    <div id="tabs">
+                        <ul>
+                            <li><a href="#tabs-1">ЖК 5 Авеню</a></li>
+                            <li><a href="#tabs-2">ЖК Perfect Loft 47'</a></li>
+                            <li><a href="#tabs-3">Aenean lacinia</a></li>
+                        </ul>
+                        <div id="tabs-1">
+                            <p><strong>10-ти поверхового будинку у новому ЖК закритого типу "5 Авеню".</strong></p>
+                            <p>На території комплексу обладнані зони відпочинку для дорослих та дітей, передбачені спортивні майданчики, також, планується супермаркет "Рукавичка" та фітнес-клуб "Sport Life". В 10 хвилинах від ЖК розташовані Гімназія Відродження і дитячий садок. Поблизу новобудови знаходяться : продуктовий магазин «Дар», гіпермаркет «Епіцентр», банк «Кредобанк», аптека, кафе, ресторани і парк ( 500 м.).</p>
+                        </div>
+                        <div id="tabs-2">
+                            <p><strong>1кімн. квартира в ЖК "Авалон Гарден".</strong></p>
+                            <p>Продаж 1-кімн. кв-ри по вул. Порохова, 20,
+                            11-ий поверх, загальна площа - 53,46 кв.м.,
+                            сучасне планування, у новому комплексі "Авалон Гарден", ІІ секція, здача квітень 2016. Район Сільмаш. Автономне опалення, балкон, велика кімната, гардероб, гарний краєвид на центр міста. 
+                            ціна - 18 000 грн. за кв.м.</p>
+                        </div>
+                        <div id="tabs-3">
+                            <p><strong>Будинок в м. Пустомити.</strong></p>
+                            <p>Загальна площа ділянки 10 сот.
+                            Не добудований 5-кімнатний, будинок (299 кв.м.) житлова площа - 97 кв.м., кухня - 20 кв.м.
+                            Готовність будинку - 80 %, є готовий дизайн під кожну кімнату.
+                            Електрика вся підведена і розведена.
+                            Будувався для себе - тому все в кращому вигляді.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        <!--</div>-->
     </aside>
 
     <!-- Map -->
+    <div class="container">
+        <div class="row">
+             <h2 class="blue text-center">Знайти нас</h2>
+             <br>
+             <hr class="small text-center">
+             <br>
+        </div>
+    </div>
     <section id="map" class="map tracked"></section>
-
     <!-- Footer -->
     <footer id="contacts" class="tracked">
         <div class="container">
@@ -269,7 +319,10 @@
                     <hr>                    
                     <br>
                     <h4><strong><span class="logo">Oscar</span> development</strong>
-                    <hr class="small">
+                    <br>
+                    <br>
+                    <hr class="small text-center">
+                    <br>
                     </h4>
                     <p>79058 Ukraine, Lviv<br>st. Cehova 1, room 4</p>
                     <ul class="list-unstyled">
@@ -283,11 +336,11 @@
                         </li>
                     </ul>
                     <br>
-                    <hr class="small">
+                    <hr class="small text-center">
                     <br>
                     <ul class="list-inline">
                         <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                            <a href="https://www.facebook.com/oscardevelopment/?pnref=lhc"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
@@ -296,7 +349,9 @@
                             <a href="#"><i class="fa fa-vk fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
+                    <br>
                     <hr class="small">
+                    <br>
                     <p class="text-muted">Copyright &copy;    medynskyypavlo@gmail.com   2016</p>
                 </div>
             </div>
@@ -305,7 +360,7 @@
 
     <div class="hidden">
         <form id="callback" class="callback form">
-            <h3>Домовитись про безкоштовну консультація</h3>
+            <h3>Замовити консультацію</h3>
             <p>
                 <input type="text" class="form-input" name="name" placeholder="  Ваше ім'я..." required />
             <p>
@@ -334,10 +389,8 @@
     <script type="text/javascript" src="js/shBrushXml.js"></script>
     <script type="text/javascript" src="js/shBrushJScript.js"></script>
     
-    <!-- FancyBox -->
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+    <!-- Slider init -->
+    <script type="text/javascript" src="libs/slider/Carousel-Plugin/Minimal/slider.min.js"></script>
 
     <!-- Common google maps JS code -->
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
@@ -345,14 +398,15 @@
 
     <!-- Waypoints -->
     <script type="text/javascript" src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-    
-    <!-- BXslider -->
-    <script type="text/javascript" src="libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+
     <!-- jQuery UI -->
     <script type="text/javascript" src="libs/jquery-ui/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 
     <!-- Common JS(jQuery) file -->
     <script type="text/javascript" src="js/common.js"></script>
+
+    <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+    <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
 
 </html>

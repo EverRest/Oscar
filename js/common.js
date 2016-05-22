@@ -17,17 +17,24 @@ $(document).ready(function () {
 		offset:'30%'
 	});
 
-	//init BXslider
-	$('.bxslider').bxSlider({
-		adaptiveHeight: true,
-		mode: 'fade',
-		captions: true,
-		auto: true,
-		autoControls: true,
-  		slideMargin: 15
+	//init Slider
+	$('#slider').rbtSlider({ 
+		height: '100vh', 
+		// displays dots pagination
+		'dots': true,
+		// displayes arrows navigation
+		'arrows': true,
+		// autoplay interval
+		// 3 = 3 seconds
+		'auto': 3
 	});
 
-	//
+	//init Tabs
+	$(function() {
+		$( "#tabs" ).tabs({
+			collapsible: true
+		});
+	});
 
 	//ajax form sending
 	$("#callback").submit(function () {
