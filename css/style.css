@@ -320,6 +320,14 @@ li.ui-state-hover {
     opacity: 0.8;
 }
 
+.img-float-left {
+    display: inline-block;
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    border: 2px solid rgb(52,152,219);
+}
+
 /* Call to Action */
 
 .call-to-action {
