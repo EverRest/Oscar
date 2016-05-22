@@ -14,7 +14,7 @@ $(document).ready(function () {
 			};
 		});
 	}, {
-		offset:'30%'
+		offset:'35%'
 	});
 
 	//init Slider
@@ -93,7 +93,7 @@ $(document).ready(function () {
 		});
     });
 
-    // #callback form's script
+    // #callback Form's script
 
     $('.form-input').focusout(function () {
     	$(this).css('background-color','#fff');
