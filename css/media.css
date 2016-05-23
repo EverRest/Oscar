@@ -2,27 +2,47 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 
@@ -30,25 +50,45 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-
+	.ui-dialog {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+	}
 }
