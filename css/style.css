@@ -16,7 +16,7 @@
 }
 
 * {
-    transition: all .5s;
+    transition: all .3s;
 }
 
 body input:focus:required:invalid,

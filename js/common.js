@@ -58,9 +58,6 @@ $(document).ready(function () {
 		return false;
 	});
 
-	//init Fancybox
-	//$(".fancybox").fancybox();
-	
 	//modal form jQuery UI
 	$('.phone-link').click(function () {
 		$('#callback').dialog({

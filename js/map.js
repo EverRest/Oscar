@@ -122,7 +122,7 @@ var main_office = 'img/office.png';
           'https://oscardevelopment2015@gmail.com</a> '+
           '.</p>'+
         '</div>'+
-        '<img class="left-img" src="img/office_pic.png">' + 
+        '<img class="left-img img-responsive" src="img/office_pic.png">' + 
       '</div>';
 
   var infowindow = new google.maps.InfoWindow({
