@@ -100,4 +100,6 @@ $(document).ready(function () {
     	$(this).css('background-color','rgba(52, 152, 219,.1)');
     });
 
+    $('#ui-id-5').append('<h4 style="z-index:20;"><strong><span class="logo">Oscar</span> development</strong></h4>');
+
 });
