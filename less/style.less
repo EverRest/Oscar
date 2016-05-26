@@ -16,7 +16,7 @@
 }
 
 * {
-    transition: all .3s;
+    transition: all .2s;
 }
 
 body input:focus:required:invalid,
@@ -29,6 +29,25 @@ body textarea:required:valid {
 }
 
 /* Global Styles */
+
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 30;
+}
+
+#page-preloader .spinner {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -16px 0 0 -16px;
+}
 
 html,
 body {
@@ -396,6 +415,16 @@ footer h4 {
     color: #fff;
 }
 
+button.submit {
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.2);
+    transition: all ease-in-out 200ms;
+}
+
+button.submit:hover {
+    box-shadow: 0px 25px 15px -15px rgba(0,0,0,0.2);
+    transform: translate(0px, -8px);
+}
+
 .callback h3 {
     color: rgba(52, 73, 94, .7);
     text-align: center;
@@ -420,5 +449,11 @@ input.form-input {
 }
 
 .hidden_text {
+    display: none;
+}
+
+/*Hot Log counter*/
+
+#hotlog_counter, #hotlog_dyn {
     display: none;
 }
